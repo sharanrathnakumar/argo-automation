@@ -9,10 +9,10 @@ const footerLinks = {
     { name: 'Contact', href: '/contact' },
   ],
   services: [
-    { name: 'Industrial Automation', href: '/services#industrial' },
-    { name: 'IoT Integration', href: '/services#iot' },
-    { name: 'Embedded Systems', href: '/services#embedded' },
-    { name: 'Smart Solutions', href: '/services#smart' },
+    { name: 'Electrical Panel Design', href: '/services#electrical-panel' },
+    { name: 'Software Support', href: '/services#software-support' },
+    { name: 'Automation Products', href: '/services#automation-products' },
+    { name: 'Vision System', href: '/services#vision-system' },
   ],
   legal: [
     { name: 'Privacy Policy', href: '/privacy' },
@@ -124,25 +124,41 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
                 <a
-                  href="mailto:info@argoautomation.com"
+                  href="mailto:argoautomation2025@outlook.com"
                   className="hover:text-primary-500 transition-colors"
                 >
-                  info@argoautomation.com
+                  argoautomation2025@outlook.com
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+919652461664"
                   className="hover:text-primary-500 transition-colors"
                 >
-                  +1 (234) 567-890
+                  +91 96524 61664
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+918086623395"
+                  className="hover:text-primary-500 transition-colors"
+                >
+                  +91 80866 23395
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+919400132808"
+                  className="hover:text-primary-500 transition-colors"
+                >
+                  +91 94001 32808
                 </a>
               </li>
               <li className="pt-2">
-                <address className="not-italic">
-                  123 Tech Street
+                <address className="not-italic text-gray-400">
+                  Industrial Automation Solutions
                   <br />
-                  Innovation City, IC 12345
+                  India
                 </address>
               </li>
             </ul>

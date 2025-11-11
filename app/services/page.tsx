@@ -5,16 +5,16 @@ import Link from 'next/link'
 
 const services = [
   {
-    id: 'industrial',
-    title: 'Industrial Automation',
-    description: 'Transform your manufacturing processes with state-of-the-art automation solutions designed for efficiency and scalability.',
+    id: 'electrical-panel',
+    title: 'Electrical Panel Design',
+    description: 'Custom electrical panel design and manufacturing for industrial automation applications with comprehensive documentation and compliance.',
     features: [
-      'PLC Programming & Integration',
-      'SCADA Systems',
-      'Robotic Process Automation',
-      'Production Line Optimization',
-      'Quality Control Systems',
-      'Predictive Maintenance',
+      'Control Panel Design & Manufacturing',
+      'Power Distribution Panels',
+      'MCC & PCC Panels',
+      'Circuit Protection Systems',
+      'Wiring & Layout Optimization',
+      'Compliance with Industry Standards',
     ],
     icon: (
       <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -23,78 +23,90 @@ const services = [
     ),
   },
   {
-    id: 'iot',
-    title: 'IoT Integration',
-    description: 'Connect, monitor, and control your devices from anywhere with our comprehensive IoT solutions.',
+    id: 'software-support',
+    title: 'Software Support - PLC, HMI, SCADA',
+    description: 'Complete software solutions for industrial automation including programming, configuration, and ongoing technical support.',
     features: [
-      'Sensor Networks',
-      'Real-time Monitoring',
-      'Cloud Integration',
-      'Data Analytics',
-      'Remote Device Management',
-      'Edge Computing Solutions',
+      'PLC Programming (Siemens, Allen Bradley, Mitsubishi)',
+      'HMI Development & Configuration',
+      'SCADA System Design & Implementation',
+      'System Integration & Commissioning',
+      'Troubleshooting & Maintenance',
+      'Software Updates & Upgrades',
     ],
     icon: (
       <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     ),
   },
   {
-    id: 'embedded',
-    title: 'Embedded Systems',
-    description: 'Custom embedded solutions tailored to your specific hardware and software requirements.',
+    id: 'automation-products',
+    title: 'Automation Products Supply',
+    description: 'Comprehensive supply of high-quality automation components and systems from leading global manufacturers.',
     features: [
-      'Microcontroller Programming',
-      'FPGA Development',
-      'Real-Time Operating Systems',
-      'Hardware-Software Co-design',
-      'Custom Board Design',
-      'Firmware Development',
+      'PLCs & Controllers',
+      'Sensors & Actuators',
+      'Variable Frequency Drives (VFDs)',
+      'Industrial Networking Equipment',
+      'Safety & Control Devices',
+      'Genuine OEM Parts & Accessories',
     ],
     icon: (
       <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
       </svg>
     ),
   },
   {
-    id: 'smart',
-    title: 'Smart Solutions',
-    description: 'AI-powered intelligent systems that learn, adapt, and optimize performance over time.',
+    id: 'vision-system',
+    title: 'Vision System',
+    description: 'Advanced machine vision solutions for quality control, inspection, and process optimization in manufacturing environments.',
     features: [
-      'Machine Learning Integration',
-      'Computer Vision Systems',
-      'Natural Language Processing',
-      'Intelligent Decision Making',
-      'Automated Optimization',
-      'Pattern Recognition',
+      'Quality Inspection Systems',
+      'Barcode & QR Code Reading',
+      'Object Detection & Tracking',
+      'Measurement & Gauging',
+      'Defect Detection & Classification',
+      'Integration with Production Lines',
     ],
     icon: (
       <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
       </svg>
     ),
   },
 ]
 
 const additionalServices = [
-  'System Integration & Migration',
-  'Consulting & Strategy',
-  'Training & Documentation',
-  'Maintenance & Support',
-  'Performance Optimization',
-  'Security & Compliance',
+  'Installation & Commissioning',
+  'Technical Training & Support',
+  'Preventive Maintenance Services',
+  'System Upgrades & Retrofitting',
+  'Emergency Breakdown Support',
+  'Consultation & Project Management',
 ]
 
 export default function Services() {
   return (
     <div className="bg-dark-950">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-dark-900 to-dark-950">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Hero Section */}
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-dark-950 via-dark-900 to-dark-950">
+        {/* Background Image */}
+        <div className="absolute inset-0 opacity-30">
+          <img 
+            src="/plc-programming.svg" 
+            alt="PLC Programming and Control" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
+        <div className="absolute inset-0 bg-gradient-to-b from-dark-950/60 via-dark-950/40 to-dark-950" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
           <motion.div
-            className="text-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -103,8 +115,7 @@ export default function Services() {
               Our <span className="text-gradient">Services</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Comprehensive automation solutions designed to transform your business
-              and drive sustainable growth.
+              Comprehensive automation solutions tailored to your industrial needs
             </p>
           </motion.div>
         </div>

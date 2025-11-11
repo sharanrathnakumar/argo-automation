@@ -6,8 +6,8 @@ import { generateOrganizationSchema, generateWebsiteSchema } from '@/components/
 
 const services = [
   {
-    title: 'Industrial Automation',
-    description: 'Advanced automation solutions for manufacturing and industrial processes',
+    title: 'Electrical Panel Design',
+    description: 'Custom control panels designed and manufactured to meet your specific automation needs',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
@@ -15,29 +15,30 @@ const services = [
     ),
   },
   {
-    title: 'IoT Integration',
-    description: 'Connect and control devices seamlessly with cutting-edge IoT technology',
+    title: 'Software Support - PLC, HMI, SCADA',
+    description: 'Expert programming and support for all major industrial automation platforms',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     ),
   },
   {
-    title: 'Embedded Systems',
-    description: 'Custom embedded solutions tailored to your specific requirements',
+    title: 'Automation Products Supply',
+    description: 'Comprehensive supply of quality automation components from trusted manufacturers',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
       </svg>
     ),
   },
   {
-    title: 'Smart Solutions',
-    description: 'Intelligent systems that adapt and optimize for maximum efficiency',
+    title: 'Vision System',
+    description: 'Advanced machine vision solutions for quality inspection and process control',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
       </svg>
     ),
   },
@@ -76,6 +77,15 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-dark-950 via-dark-900 to-dark-950">
+        {/* Hero Background Image */}
+        <div className="absolute inset-0 opacity-25">
+          <img 
+            src="/automation-hero.svg" 
+            alt="Industrial Automation Control System" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-600/10 rounded-full blur-3xl animate-pulse" />
@@ -248,6 +258,15 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
+              {/* Image Showcase */}
+              <div className="col-span-2 bg-dark-800 rounded-xl overflow-hidden border border-dark-700 mb-4">
+                <img 
+                  src="/vision-system.svg" 
+                  alt="Vision System Quality Inspection" 
+                  className="w-full h-48 object-cover opacity-80 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              
               <div className="bg-dark-800 rounded-xl p-6 border border-dark-700">
                 <div className="text-4xl font-bold text-gradient mb-2">15+</div>
                 <div className="text-gray-400">Years Experience</div>
@@ -272,6 +291,46 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-dark-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Technology Showcase */}
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="relative h-48 bg-dark-900 rounded-xl overflow-hidden border border-dark-700 group">
+              <img 
+                src="/electrical-panel.svg" 
+                alt="Electrical Panel Design" 
+                className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark-950 to-transparent flex items-end p-4">
+                <h3 className="text-white font-semibold">Electrical Panel Design</h3>
+              </div>
+            </div>
+            <div className="relative h-48 bg-dark-900 rounded-xl overflow-hidden border border-dark-700 group">
+              <img 
+                src="/plc-programming.svg" 
+                alt="PLC Programming" 
+                className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark-950 to-transparent flex items-end p-4">
+                <h3 className="text-white font-semibold">PLC/HMI/SCADA Solutions</h3>
+              </div>
+            </div>
+            <div className="relative h-48 bg-dark-900 rounded-xl overflow-hidden border border-dark-700 group">
+              <img 
+                src="/vision-system.svg" 
+                alt="Vision System" 
+                className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark-950 to-transparent flex items-end p-4">
+                <h3 className="text-white font-semibold">Machine Vision Systems</h3>
+              </div>
+            </div>
+          </motion.div>
+          
           <motion.div
             className="bg-gradient-to-r from-primary-600 to-primary-800 rounded-2xl p-12 text-center relative overflow-hidden"
             initial={{ opacity: 0, y: 30 }}

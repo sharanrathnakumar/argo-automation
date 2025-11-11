@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#020617"/>
+  
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="1" fill="#0ea5e9" opacity="0.2"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#0ea5e9" font-family="Arial" font-size="28" font-weight="bold">PLC Programming &amp; Control</text>
+  
+  <!-- Code Editor Window -->
+  <rect x="50" y="100" width="350" height="400" rx="8" fill="#0f172a" stroke="#0ea5e9" stroke-width="2"/>
+  
+  <!-- Window Header -->
+  <rect x="50" y="100" width="350" height="30" rx="8" fill="#0369a1"/>
+  <text x="65" y="120" fill="white" font-family="monospace" font-size="12" font-weight="bold">program.st</text>
+  <circle cx="370" cy="115" r="5" fill="#ef4444"/>
+  <circle cx="355" cy="115" r="5" fill="#eab308"/>
+  <circle cx="340" cy="115" r="5" fill="#22c55e"/>
+  
+  <!-- Code Content -->
+  <text x="65" y="160" fill="#64748b" font-family="monospace" font-size="11">(* Main Control Logic *)</text>
+  <text x="65" y="180" fill="#0ea5e9" font-family="monospace" font-size="11">PROGRAM Main_Control</text>
+  <text x="65" y="200" fill="#38bdf8" font-family="monospace" font-size="11">VAR</text>
+  <text x="80" y="220" fill="#22c55e" font-family="monospace" font-size="11">StartButton : BOOL;</text>
+  <text x="80" y="240" fill="#22c55e" font-family="monospace" font-size="11">StopButton  : BOOL;</text>
+  <text x="80" y="260" fill="#22c55e" font-family="monospace" font-size="11">Motor_Run   : BOOL;</text>
+  <text x="65" y="280" fill="#38bdf8" font-family="monospace" font-size="11">END_VAR</text>
+  
+  <text x="65" y="310" fill="#f59e0b" font-family="monospace" font-size="11">IF StartButton THEN</text>
+  <text x="80" y="330" fill="#22c55e" font-family="monospace" font-size="11">Motor_Run := TRUE;</text>
+  <text x="65" y="350" fill="#f59e0b" font-family="monospace" font-size="11">END_IF;</text>
+  
+  <text x="65" y="380" fill="#f59e0b" font-family="monospace" font-size="11">IF StopButton THEN</text>
+  <text x="80" y="400" fill="#22c55e" font-family="monospace" font-size="11">Motor_Run := FALSE;</text>
+  <text x="65" y="420" fill="#f59e0b" font-family="monospace" font-size="11">END_IF;</text>
+  
+  <text x="65" y="450" fill="#0ea5e9" font-family="monospace" font-size="11">END_PROGRAM</text>
+  
+  <!-- HMI Screen -->
+  <rect x="430" y="100" width="320" height="400" rx="8" fill="#1e293b" stroke="#0ea5e9" stroke-width="3"/>
+  
+  <!-- Screen Title -->
+  <rect x="430" y="100" width="320" height="40" rx="8" fill="#0369a1"/>
+  <text x="590" y="125" text-anchor="middle" fill="white" font-family="Arial" font-size="16" font-weight="bold">HMI Control Panel</text>
+  
+  <!-- Tank 1 -->
+  <rect x="450" y="180" width="60" height="80" fill="#0f172a" stroke="#0ea5e9" stroke-width="2"/>
+  <rect x="450" y="220" width="60" height="40" fill="#06b6d4" opacity="0.6"/>
+  <text x="480" y="210" text-anchor="middle" fill="#fff" font-family="monospace" font-size="11">65%</text>
+  
+  <!-- Pipe -->
+  <line x1="510" y1="230" x2="550" y2="230" stroke="#0ea5e9" stroke-width="4"/>
+  
+  <!-- Valve -->
+  <rect x="530" y="215" width="30" height="30" fill="#0f172a" stroke="#22c55e" stroke-width="2" rx="3"/>
+  <text x="545" y="233" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="9">V1</text>
+  
+  <!-- Pump -->
+  <circle cx="580" cy="230" r="20" fill="#0f172a" stroke="#0ea5e9" stroke-width="2"/>
+  <circle cx="580" cy="230" r="3" fill="#22c55e"/>
+  
+  <!-- Pipe 2 -->
+  <line x1="600" y1="230" x2="640" y2="230" stroke="#0ea5e9" stroke-width="4"/>
+  
+  <!-- Tank 2 -->
+  <rect x="640" y="180" width="60" height="80" fill="#0f172a" stroke="#0ea5e9" stroke-width="2"/>
+  <rect x="640" y="230" width="60" height="30" fill="#06b6d4" opacity="0.6"/>
+  <text x="670" y="223" text-anchor="middle" fill="#fff" font-family="monospace" font-size="11">32%</text>
+  
+  <!-- Control Buttons -->
+  <rect x="450" y="300" width="130" height="40" rx="5" fill="#22c55e" stroke="#22c55e" stroke-width="2"/>
+  <text x="515" y="325" text-anchor="middle" fill="white" font-family="Arial" font-size="14" font-weight="bold">START</text>
+  
+  <rect x="600" y="300" width="130" height="40" rx="5" fill="#0f172a" stroke="#ef4444" stroke-width="2"/>
+  <text x="665" y="325" text-anchor="middle" fill="#ef4444" font-family="Arial" font-size="14" font-weight="bold">STOP</text>
+  
+  <!-- Status Display -->
+  <rect x="450" y="360" width="280" height="80" rx="5" fill="#020617" stroke="#0ea5e9" stroke-width="1"/>
+  <text x="460" y="380" fill="#64748b" font-family="monospace" font-size="10">System Status</text>
+  <text x="460" y="400" fill="#22c55e" font-family="monospace" font-size="11">● Motor: RUNNING</text>
+  <text x="460" y="417" fill="#0ea5e9" font-family="monospace" font-size="11">● Valve 1: OPEN</text>
+  <text x="460" y="434" fill="#eab308" font-family="monospace" font-size="11">● Pressure: 4.2 bar</text>
+  
+  <!-- Footer Text -->
+  <text x="400" y="570" text-anchor="middle" fill="#64748b" font-family="Arial" font-size="14">Siemens • Allen Bradley • Mitsubishi • Schneider</text>
+</svg>

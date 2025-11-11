@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#0f172a"/>
+  
+  <!-- Main Panel -->
+  <rect x="100" y="80" width="280" height="440" rx="10" fill="#1e293b" stroke="#0ea5e9" stroke-width="3"/>
+  <rect x="120" y="110" width="240" height="380" rx="5" fill="#020617" stroke="#38bdf8" stroke-width="2"/>
+  
+  <!-- Circuit Breakers Row 1 -->
+  <rect x="140" y="140" width="35" height="60" rx="3" fill="#0369a1" stroke="#0ea5e9" stroke-width="1"/>
+  <circle cx="157.5" cy="175" r="8" fill="#22c55e"/>
+  
+  <rect x="185" y="140" width="35" height="60" rx="3" fill="#0369a1" stroke="#0ea5e9" stroke-width="1"/>
+  <circle cx="202.5" cy="175" r="8" fill="#22c55e"/>
+  
+  <rect x="230" y="140" width="35" height="60" rx="3" fill="#0369a1" stroke="#0ea5e9" stroke-width="1"/>
+  <circle cx="247.5" cy="175" r="8" fill="#22c55e"/>
+  
+  <rect x="275" y="140" width="35" height="60" rx="3" fill="#0369a1" stroke="#0ea5e9" stroke-width="1"/>
+  <circle cx="292.5" cy="175" r="8" fill="#22c55e"/>
+  
+  <!-- Circuit Breakers Row 2 -->
+  <rect x="140" y="215" width="35" height="60" rx="3" fill="#0369a1" stroke="#0ea5e9" stroke-width="1"/>
+  <circle cx="157.5" cy="250" r="8" fill="#22c55e"/>
+  
+  <rect x="185" y="215" width="35" height="60" rx="3" fill="#0369a1" stroke="#0ea5e9" stroke-width="1"/>
+  <circle cx="202.5" cy="250" r="8" fill="#eab308"/>
+  
+  <rect x="230" y="215" width="35" height="60" rx="3" fill="#0369a1" stroke="#0ea5e9" stroke-width="1"/>
+  <circle cx="247.5" cy="250" r="8" fill="#22c55e"/>
+  
+  <rect x="275" y="215" width="35" height="60" rx="3" fill="#0369a1" stroke="#0ea5e9" stroke-width="1"/>
+  <circle cx="292.5" cy="250" r="8" fill="#22c55e"/>
+  
+  <!-- Control Section -->
+  <rect x="140" y="300" width="170" height="80" rx="5" fill="#0f172a" stroke="#0ea5e9" stroke-width="1"/>
+  <circle cx="160" cy="330" r="5" fill="#22c55e"/>
+  <circle cx="180" cy="330" r="5" fill="#22c55e"/>
+  <circle cx="200" cy="330" r="5" fill="#0ea5e9"/>
+  
+  <!-- MCC Panel -->
+  <rect x="420" y="80" width="340" height="440" rx="10" fill="#1e293b" stroke="#0ea5e9" stroke-width="3"/>
+  
+  <!-- Motor Starter 1 -->
+  <rect x="450" y="130" width="130" height="100" rx="5" fill="#020617" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="515" y="165" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="14">RUNNING</text>
+  
+  <!-- Motor Starter 2 -->
+  <rect x="600" y="130" width="130" height="100" rx="5" fill="#020617" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="665" y="165" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="14">RUNNING</text>
+  
+  <!-- Motor Starter 3 -->
+  <rect x="450" y="250" width="130" height="100" rx="5" fill="#020617" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="515" y="285" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="14">STOPPED</text>
+  
+  <!-- Motor Starter 4 -->
+  <rect x="600" y="250" width="130" height="100" rx="5" fill="#020617" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="665" y="285" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="14">RUNNING</text>
+  
+  <!-- Bus Bar -->
+  <rect x="450" y="370" width="280" height="40" rx="3" fill="#0f172a" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="590" y="395" text-anchor="middle" fill="#0ea5e9" font-family="monospace" font-size="12">BUS BAR - 415V 3-PHASE</text>
+  
+  <!-- Protection -->
+  <rect x="450" y="430" width="85" height="50" rx="3" fill="#020617" stroke="#22c55e" stroke-width="2"/>
+  <text x="492" y="460" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="10">NORMAL</text>
+  
+  <rect x="550" y="430" width="85" height="50" rx="3" fill="#020617" stroke="#22c55e" stroke-width="2"/>
+  <text x="592" y="460" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="10">NORMAL</text>
+  
+  <rect x="645" y="430" width="85" height="50" rx="3" fill="#020617" stroke="#22c55e" stroke-width="2"/>
+  <text x="687" y="460" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="10">NORMAL</text>
+  
+  <!-- Title -->
+  <text x="400" y="560" text-anchor="middle" fill="#0ea5e9" font-family="Arial" font-size="24" font-weight="bold">Electrical Panel Design &amp; MCC</text>
+  <text x="400" y="585" text-anchor="middle" fill="#64748b" font-family="Arial" font-size="14">Control Panels • Motor Control Centers • Power Distribution</text>
+</svg>

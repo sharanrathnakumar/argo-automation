@@ -133,8 +133,8 @@ export default function Contact() {
         </svg>
       ),
       title: 'Email',
-      content: 'info@argoautomation.com',
-      link: 'mailto:info@argoautomation.com',
+      content: 'argoautomation2025@outlook.com',
+      link: 'mailto:argoautomation2025@outlook.com',
     },
     {
       icon: (
@@ -143,8 +143,28 @@ export default function Contact() {
         </svg>
       ),
       title: 'Phone',
-      content: '+1 (234) 567-890',
-      link: 'tel:+1234567890',
+      content: '+91 96524 61664',
+      link: 'tel:+919652461664',
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+      ),
+      title: 'Alternate Phone',
+      content: '+91 80866 23395',
+      link: 'tel:+918086623395',
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+      ),
+      title: 'Support Line',
+      content: '+91 94001 32808',
+      link: 'tel:+919400132808',
     },
     {
       icon: (
@@ -153,8 +173,8 @@ export default function Contact() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
       ),
-      title: 'Address',
-      content: '123 Tech Street, Innovation City, IC 12345',
+      title: 'Location',
+      content: 'Industrial Automation Solutions, India',
       link: null,
     },
     {
@@ -164,7 +184,7 @@ export default function Contact() {
         </svg>
       ),
       title: 'Business Hours',
-      content: 'Mon - Fri: 9:00 AM - 6:00 PM',
+      content: 'Mon - Sat: 9:00 AM - 6:00 PM',
       link: null,
     },
   ]
@@ -300,10 +320,10 @@ export default function Contact() {
                       className="w-full px-4 py-3 bg-dark-800 border border-dark-700 rounded-lg text-white focus:outline-none focus:border-primary-500 transition-colors"
                     >
                       <option value="">Select a service</option>
-                      <option value="industrial">Industrial Automation</option>
-                      <option value="iot">IoT Integration</option>
-                      <option value="embedded">Embedded Systems</option>
-                      <option value="smart">Smart Solutions</option>
+                      <option value="electrical-panel">Electrical Panel Design</option>
+                      <option value="software-support">Software Support (PLC, HMI, SCADA)</option>
+                      <option value="automation-products">Automation Products Supply</option>
+                      <option value="vision-system">Vision System</option>
                       <option value="other">Other</option>
                     </select>
                   </div>
